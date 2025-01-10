@@ -1,0 +1,13 @@
+<!-- home-ecommerce.component.html -->
+<div>
+    <h2>Lista de Productos</h2>
+    <div class="productos-lista">
+      <div *ngFor="let producto of productos" class="producto-card">
+        <h3>{{ producto.nombre }}</h3>
+        <p>{{ producto.descripcion }}</p>
+        <p>Precio: ${{ producto.precio }}</p>
+        <button [routerLink]="['/producto', producto.id]">Ver más</button>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,6 @@
+<ul>
+    <li *ngFor="let tarea of tareas">
+      <a (click)="verTarea(tarea.id)">{{ tarea.titular }}</a>
+    </li>
+  </ul>
+  
